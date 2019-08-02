@@ -23,7 +23,10 @@ app.get("/",function(req, res){
   //res.sendFile(__dirname + "/views/index.html");
  // res.sendFile(path.join(__dirname ,'views','index.html'));
 
- res.render('\index', { list:['one','two','three'],title: 'EJS' });
+ res.render('\index', { nav:
+                [{link:'/books', title:'Books'},
+                {link:'/authors', title:'Authors'}],
+    title: 'EJS' });
 });
 
 app.listen(port,function(){
