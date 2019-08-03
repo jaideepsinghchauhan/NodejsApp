@@ -5,6 +5,8 @@ const path = require('path');
 const debug = require('debug')('app');
 const app = express();
 
+
+const bookRouter = require('./src/routes/bookRouter');
 const port = process.env.PORT;
 
 app.set('views','./src/views');
@@ -17,7 +19,7 @@ app.use('/css', express.static(path.join(__dirname+'/node_modules/bootstrap/dist
 app.use('/js', express.static(path.join(__dirname+'/node_modules/bootstrap/dist/js')));
 app.use('/js', express.static(path.join(__dirname+'/node_modules/jquery/dist')));
 
-
+app.use('/books',bookRouter);
 app.get("/",function(req, res){
   // res.send("hello");
   //res.sendFile(__dirname + "/views/index.html");

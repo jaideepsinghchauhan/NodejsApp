@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
         <meta charset="utf-8">
-        <title>Bootply snippet - Storystrap Template</title>
+        <title>Home Page</title>
         <meta name="generator" content="Bootply" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="description" content="Clean Bootstrap 3 single column layout that works well for blog or article lists. This template features circle images, minimal narrow-style compresse" />
@@ -23,23 +23,22 @@
     <!-- HTML code from Bootply.com editor -->
     
     <body >
-<div class="container">     
-    <nav class="navbar navbar-expand-sm bg-light navbar-fixed-top">
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <% for(var i=0;i<nav.length; i++){%>
-        <li class="nav-item">
-          <a class="nav-link" href="<%= nav[i].link%>"><%= nav[i].title %></a>
-        </li>
-        <%}%>
-      </ul>
-    
-    </nav>
 <div id="masthead">  
   <div class="container">
+      <nav class="navbar navbar-expand-sm bg-light navbar-fixed-top">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <% for(var i=0;i<nav.length; i++){%>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= nav[i].link%>"><%= nav[i].title %></a>
+            </li>
+            <%}%>
+          </ul>
+        
+        </nav>
     <div class="row">
       <div class="col-md-7">
         <h1>Storystrap
